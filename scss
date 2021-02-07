@@ -1,8 +1,13 @@
-$bck-color: #2e3135;
-$drk-color-2: #24292b;
-$second-color: #c922f3;
-$prime-color: #4187e6;
-$third-color: #6d3ce1;
+$bck-color: #08140a;
+$fourth-color: #acacab;
+$second-color: #da4c4b;
+$prime-color: #facb59;
+$third-color: #d8d6c1;
+
+$prime-font: "DM Serif Text", serif;
+// $font-header: "Proxima-Nova-Thin", sans-serif;
+$second-font: "Montserrat", Helvetica, sans-serif;
+$cursive-font: "Mrs Saint Delafield", cursive;
 
 /* Basic styles */
 *,
@@ -29,7 +34,7 @@ body {
   background-color: #202020;
   // font-family: "Poppins", sans-serif;
   font-family: "Poiret One", cursive;
-
+  letter-spacing: 0.1em;
   // font-size: 1rem;
   // line-height: 1.2;
   overflow-x: hidden;
@@ -74,22 +79,27 @@ main {
 }
 
 .card-filter {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(8, 20, 10, 0.9);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
   // border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  // border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 // FONT TEMPLATE -------------------------------- //
 
 a {
   text-decoration: none;
+  font-family: $second-font;
 }
 
 li {
   list-style-type: none;
+}
+
+p {
+  font-family: $second-font;
 }
 
 // NAVBAR ----------------------------- //
@@ -150,11 +160,12 @@ li {
 }
 
 .navbar .logo a {
+  font-family: $prime-font;
   padding-left: 9%;
   display: block;
   font-size: 1.5em;
-  font-weight: bold;
-  color: rgb(14, 13, 13);
+  // font-weight: bold;
+  color: $third-color;
   text-decoration: none;
 }
 .navbar .logo a:hover {
@@ -193,7 +204,7 @@ li {
 .navbar label i:before,
 .navbar label i:after {
   display: block;
-  background: rgb(19, 18, 18);
+  background: $third-color;
 }
 .navbar label i:before {
   top: 8px;
@@ -230,7 +241,7 @@ li {
 
 .hero {
   height: 100vh;
-  background-image: url("../img/hero-blck-paper-2.jpg");
+  background-image: url("../img/hero-mnt\ \(2\).jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -243,21 +254,111 @@ li {
   grid-column: 1;
   grid-row: 1 / span 3;
   z-index: 2;
+  animation: grain 8s steps(10) infinite;
 }
 
-.hero-card {
+// .hero-card {
+//   grid-column: 1;
+//   grid-row: 1 / span 3;
+//   margin: 1em;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   z-index: 3;
+// }
+
+.hero h1 {
   grid-column: 1;
-  grid-row: 2;
-  margin: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  grid-row: 1 / span 2;
+  // grid-column: 1;
+  align-self: center;
+  justify-self: center;
+  font-family: $prime-font;
+  color: $third-color;
+  font-weight: 100;
+  font-size: 3.9em;
+  z-index: 4;
+  letter-spacing: 0.15em;
+  // text-shadow: 3px 3px #000;
+}
+
+.hero h1::first-letter {
+  // font-size: 200%;
+  color: $prime-color;
+}
+
+.hero h2 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  // grid-column: 1;
+  align-self: center;
+  color: #000;
+  justify-self: center;
+  font-family: $cursive-font;
+  font-size: 6.3em;
+  z-index: 3;
+  font-weight: 100;
+}
+
+.hero p {
+  grid-column: 1;
+  grid-row: 3;
+  align-self: start;
+  justify-self: center;
+  text-align: center;
+  padding: 0 1em;
+  font-size: 0.9em;
+  color: $third-color;
+  font-weight: 300;
   z-index: 3;
 }
 
-.hero-card h1 {
-  color: #e7bd74;
+.hero q {
+  padding: 1em;
+  grid-column: 1;
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  z-index: 3;
+  color: $prime-color;
+  font-size: 0.9em;
+  font-family: $prime-font;
+}
+
+.hero-cnt-link {
+  grid-column: 1;
+  grid-row: 3;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  // padding: 0 2em;
+  font-size: 1.5em;
+  color: $third-color;
+  // background-color: $second-color;
+  font-weight: 600;
+  z-index: 3;
+  border: 2px solid $second-color;
+  padding: 0.5em 2.7em;
+  text-transform: uppercase;
+}
+
+.hero-soc-icon {
+  padding-bottom: 1em;
+  grid-column: 1;
+  grid-row: 3;
+  align-self: end;
+  // justify-self: ;
+  text-align: center;
+  z-index: 3;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-soc-icon a {
+  font-size: 1.5em;
+  color: #d8d6c1;
 }
 
 .abt-text p {
@@ -370,7 +471,7 @@ li {
     height: 100%;
     transition: all 0.3s ease-out;
     display: table;
-    background: #ddd;
+    background: $prime-color;
   }
   .navbar nav ul {
     margin: 0;
@@ -390,14 +491,14 @@ li {
     transition: all 0.3s ease-out;
   }
   .navbar nav li:hover {
-    background: #212121;
+    background: $bck-color;
   }
   .navbar nav li:hover a {
-    color: #fff;
+    color: $second-color;
     transition: all 0.3s ease-out;
   }
   .navbar nav li a {
-    color: #212121;
+    color: $bck-color;
   }
 
   .mbl-link {
@@ -410,7 +511,7 @@ li {
   }
 
   .mbl-link:nth-of-type(1) {
-    // height: 50vh;
+    height: 50vh;
     background-image: url("../img/about-img-1.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -442,23 +543,29 @@ li {
     z-index: 3;
   }
 
-  .mbl-link:nth-of-type(2),
+  .mbl-link:nth-of-type(2) {
+    margin: 2em 1em;
+    height: 50vh;
+    background-color: $second-color;
+  }
+
   .mbl-link:nth-of-type(3),
-  .mbl-link:nth-of-type(4) {
+  .mbl-link:nth-of-type(4),
+  .mbl-link:nth-of-type(5) {
     padding: 1em;
   }
 
-  .mbl-link:nth-of-type(2) img,
   .mbl-link:nth-of-type(3) img,
-  .mbl-link:nth-of-type(4) img {
+  .mbl-link:nth-of-type(4) img,
+  .mbl-link:nth-of-type(5) img {
     justify-self: center;
     height: 100%;
     box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.45);
   }
 
-  .mbl-link:nth-of-type(2) a,
   .mbl-link:nth-of-type(3) a,
-  .mbl-link:nth-of-type(4) a {
+  .mbl-link:nth-of-type(4) a,
+  .mbl-link:nth-of-type(5) a {
     color: white;
     width: 72%;
     text-align: center;
