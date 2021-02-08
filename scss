@@ -4,7 +4,7 @@ $second-color: #da4c4b;
 $prime-color: #facb59;
 $third-color: #d8d6c1;
 
-$prime-font: "DM Serif Text", serif;
+$prime-font: "Cormorant Garamond", serif;
 // $font-header: "Proxima-Nova-Thin", sans-serif;
 $second-font: "Montserrat", Helvetica, sans-serif;
 $cursive-font: "Mrs Saint Delafield", cursive;
@@ -31,7 +31,7 @@ body {
   height: 100%;
   padding: 0;
   cursor: crosshair;
-  background-color: #202020;
+  background-color: $bck-color;
   // font-family: "Poppins", sans-serif;
   font-family: "Poiret One", cursive;
   letter-spacing: 0.1em;
@@ -79,7 +79,7 @@ main {
 }
 
 .card-filter {
-  background: rgba(8, 20, 10, 0.9);
+  background: rgba(8, 20, 10, 0.72);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5.4px);
   -webkit-backdrop-filter: blur(5.4px);
@@ -269,45 +269,52 @@ p {
 // }
 
 .hero h1 {
+  margin: 0;
+  padding: 0;
+  padding-left: 9%;
   grid-column: 1;
-  grid-row: 1 / span 2;
+  grid-row: 3;
   // grid-column: 1;
-  align-self: center;
-  justify-self: center;
+  align-self: start;
+  justify-self: start;
   font-family: $prime-font;
   color: $third-color;
-  font-weight: 100;
-  font-size: 3.9em;
+  font-weight: 500;
+  font-size: 4.5em;
   z-index: 4;
   letter-spacing: 0.15em;
+
   // text-shadow: 3px 3px #000;
 }
 
 .hero h1::first-letter {
   // font-size: 200%;
-  color: $prime-color;
+  color: $second-color;
 }
 
 .hero h2 {
   grid-column: 1;
-  grid-row: 1 / span 2;
+  grid-row: 3;
   // grid-column: 1;
-  align-self: center;
+  align-self: start;
   color: #000;
   justify-self: center;
   font-family: $cursive-font;
-  font-size: 6.3em;
+  font-size: 6em;
   z-index: 3;
   font-weight: 100;
+  border: 2px solid $third-color;
+  padding: 0.2em;
 }
 
 .hero p {
+  padding-left: 9%;
   grid-column: 1;
-  grid-row: 3;
-  align-self: start;
-  justify-self: center;
+  grid-row: 2;
+  align-self: end;
+  justify-self: start;
   text-align: center;
-  padding: 0 1em;
+  // padding: 0 1em;
   font-size: 0.9em;
   color: $third-color;
   font-weight: 300;
@@ -315,49 +322,54 @@ p {
 }
 
 .hero q {
-  padding: 1em;
+  margin-right: 27%;
+  padding-left: 9%;
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1 / span 2;
   align-self: center;
-  justify-self: center;
-  text-align: center;
+  justify-self: start;
+  text-align: left;
   z-index: 3;
   color: $prime-color;
-  font-size: 0.9em;
+  font-size: 1.5em;
   font-family: $prime-font;
+  opacity: 0.72;
 }
 
 .hero-cnt-link {
   grid-column: 1;
   grid-row: 3;
-  align-self: center;
-  justify-self: center;
+  align-self: end;
+  justify-self: start;
   text-align: center;
   // padding: 0 2em;
-  font-size: 1.5em;
-  color: $third-color;
+  font-size: 1.3em;
+  color: $second-color;
   // background-color: $second-color;
   font-weight: 600;
   z-index: 3;
-  border: 2px solid $second-color;
-  padding: 0.5em 2.7em;
-  text-transform: uppercase;
+  // border: 2px solid $second-color;
+  padding: 0 0 9% 9%;
+  // text-transform: uppercase;
 }
 
 .hero-soc-icon {
-  padding-bottom: 1em;
+  // padding-bottom: 1em;
   grid-column: 1;
-  grid-row: 3;
-  align-self: end;
+  grid-row: 2;
+  align-self: center;
   // justify-self: ;
-  text-align: center;
+  text-align: end;
   z-index: 3;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
 .hero-soc-icon a {
-  font-size: 1.5em;
+  margin-right: 3%;
+  padding: 1em 0;
+  font-size: 1em;
   color: #d8d6c1;
 }
 
@@ -498,6 +510,7 @@ p {
     transition: all 0.3s ease-out;
   }
   .navbar nav li a {
+    font-family: $prime-font;
     color: $bck-color;
   }
 
@@ -523,11 +536,12 @@ p {
     grid-row: 1;
     z-index: 2;
     height: inherit;
-    background-color: #202020;
+    background-color: $second-color;
     opacity: 0.8;
   }
 
   .mbl-link:nth-of-type(1) a {
+    font-family: $prime-font;
     grid-column: 1;
     grid-row: 1;
     align-self: center;
@@ -546,7 +560,11 @@ p {
   .mbl-link:nth-of-type(2) {
     margin: 2em 1em;
     height: 50vh;
-    background-color: $second-color;
+    // background-color: $second-color;
+  }
+
+  .mbl-link:nth-of-type(2) p {
+    color: $prime-color;
   }
 
   .mbl-link:nth-of-type(3),
