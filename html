@@ -10,7 +10,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -22,9 +22,9 @@
           <nav class="menu">
               <ul>
                   <li><a href="#home">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#contacts">Contacts</a></li>
+                  <li><a href="about.html">About </a></li>
+                  <li><a href="#book-sec">Books</a></li>
+                  <li><a href="#contacts">Contact</a></li>
               </ul>
           </nav>        
       </div>
@@ -55,45 +55,46 @@
 <section id="mbl-links">
   <div class="mbl-link animate__animated   animate__backInUp animate__delay-2s">
     <div class="mbl-link-filter"></div>
-    <a href="#">About</a>
+    <p>"It is better by noble boldness to run the risk of being subject to half of the evils we anticipate than to remain in cowardly listlessness for fear of what might happen." <br> - Herodotus</p>
+    <a id="abt-mbl-id" href="about.html">About</a>
+  </div>
+  
+
+  <div class="mbl-link animate__animated   animate__backInUp animate__delay-2s">
+    <div class="mbl-link-filter"></div>
+   <p>“All you have to do is write one true sentence. Write the truest sentence that you know. All you have to do is write one true sentence. Write the truest sentence that you know.” <br> — Ernest Hemingway</p>
   </div>
 
   <div class="mbl-link animate__animated   animate__backInUp animate__delay-2s">
     <div class="mbl-link-filter"></div>
-   <p>“All you have to do is write one true sentence. Write the truest sentence that you know.” <br> — Ernest Hemingway</p>
+  <h2 id="book-sec">Books</h2>
   </div>
+  
   
   <div class="mbl-link animate__animated   animate__backInUp animate__delay-2s">
     <img src="img/hrd-cvr-bk-1.jpg" alt="">
-    <a href="#">Info</a>
-    <a href="#">Purchase</a>
+    <a href="#">Read More</a>
+    <a href="https://www.amazon.com/Where-Was-Hijacked-Zana-Zangana/dp/1365024822/ref=sr_1_2?dchild=1&keywords=where+was+god+hijacked%3F&qid=1612803003&sr=8-2">Purchase Hard Copy</a>
   </div>
 
   <div  class="mbl-link animate__animated   animate__backInUp animate__delay-2s">
     <img src="img/WWGH-cover-concept-9.jpg" alt="">
     <a href="#">Info</a>
-    <a href="#">Purchase</a>
+    <a href="#">Purchase PDF</a>
   </div>
 
   <div  class="mbl-link animate__animated   animate__backInUp animate__delay-2s">
     <img src="img/WWGH-cover-concept-9.jpg" alt="">
     <a href="#">Info</a>
-    <a href="#">Purchase</a>
+    <a href="">Coming Soon</a>
   
   </div>
 
-  <div class="mbl-link foot">
-    <ul>
-      <li><a href="#">about</a></li>
-      <li><a href="#">books</a></li>
-      <li><a href="#">news</a></li>
-      <!-- <li><a href="#">about</a></li> -->
-    </ul>
-  </div>
+
   
 </section>
 
-    <section id="about">
+    <section id="about" class="about-main">
       <div class="abt-title">
         <h1>Zana Zangana</h1>
         <p>Researcher - Author </p>
@@ -107,13 +108,48 @@
 
           
           <p class="animate__animated animate__fadeInBottomLeft animate__delay-2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cupiditate quam inventore animi minima ut asperiores, laboriosam harum. Cum tenetur nostrum minima alias distinctio eaque quod quis vitae expedita suscipit impedit, doloribus sed possimus ex aliquid reiciendis! Explicabo distinctio, porro nihil, quisquam eius rerum odit unde animi amet corrupti aspernatur.</p>
-          <p  class="animate__animated animate__fadeInBottomLeft animate__delay-3s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cupiditate quam inventore animi minima ut asperiores, laboriosam harum. Cum tenetur nostrum minima alias distinctio eaque quod quis vitae expedita suscipit impedit, doloribus sed possimus ex aliquid reiciendis! Explicabo distinctio, porro nihil, quisquam eius rerum odit unde animi amet corrupti aspernatur.</p>
-          <p  class="animate__animated animate__fadeInBottomLeft animate__delay-4s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cupiditate quam inventore animi minima ut asperiores, laboriosam harum. Cum tenetur nostrum minima alias distinctio eaque quod quis vitae expedita suscipit impedit, doloribus sed possimus ex aliquid reiciendis! Explicabo distinctio, porro nihil, quisquam eius rerum odit unde animi amet corrupti aspernatur.</p>
+    
         </div>
       </div>
     </section>
 
+    <section id="contact">
 
+    <h2>Contact Form</h2>
+
+<div class="cnt-container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</section>
+
+    <div class="footer-link main">
+      <ul>
+        <li><a href="#abt-mbl-id">about</a></li>
+        <li><a href="#book-sec">books</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="#">news</a></li>
+        <p>  Copyrite &#169; 2020 Shargene Zangana</p> 
+        <!-- <li><a href="#">about</a></li> -->
+      </ul>
+    </div>
     
 
   </div>
