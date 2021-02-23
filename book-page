@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <div class="header header-fixed">
+      <div class="navbar container">
+          <div class="logo"><a href="#home">ZZ</a></div>
+          <input type="checkbox" id="navbar-toggle" >
+          <label for="navbar-toggle"><i></i></label>
+          <nav class="menu">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About </a></li>
+                  <li><a href="#book-sec">Books</a></li>
+                  <li><a href="#contacts">Contact</a></li>
+              </ul>
+          </nav>        
+      </div>
+  </div>
+        
+  </header>
+
+  <body>
+
+    <main id="prv-book-page">
+        <div class="book-hero">
+            <a href="index.html" class="hero-rtrn-link"> Main</a>
+            <div class="hero-brdr"></div>
+            <div class="bk-dsply">
+                <img src="img/hrd-cvr-bk-1.jpg" alt="">
+                <a href="" class="book-btn">Purchase</a>
+            </div>
+            <div class="hero-content">
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio modi atque recusandae labore est at in delectus adipisci enim? Quos rerum obcaecati quisquam porro quidem aut asperiores ea accusantium blanditiis dolorum non dignissimos consectetur a maxime pariatur, minus voluptatum aliquid cumque quod nisi architecto ipsam nesciunt eum. Eveniet, magni nobis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quis, itaque eveniet beatae magni quae veniam sit sint, velit facere similique nihil rem eum sapiente.</p>
+            </div>
+        </div>
+
+        <div class="book-pre-content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tempore veritatis explicabo expedita assumenda necessitatibus, autem animi consequatur eum reprehenderit, possimus nesciunt officiis ab eius ipsum dignissimos ut doloribus, laudantium doloremque. Optio dolores laborum eligendi qui. Tempore laboriosam delectus, voluptatem, optio sint, quos perspiciatis omnis nulla praesentium ab eaque deserunt?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tempore veritatis explicabo expedita assumenda necessitatibus, autem animi consequatur eum reprehenderit, possimus nesciunt officiis ab eius ipsum dignissimos ut doloribus, laudantium doloremque. Optio dolores laborum eligendi qui. Tempore laboriosam delectus, voluptatem, optio sint, quos perspiciatis omnis nulla praesentium ab eaque deserunt?</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tempore veritatis explicabo expedita assumenda necessitatibus, autem animi consequatur eum reprehenderit, possimus nesciunt officiis ab eius ipsum dignissimos ut doloribus, laudantium doloremque. Optio dolores laborum eligendi qui. Tempore laboriosam delectus, voluptatem, optio sint, quos perspiciatis omnis nulla praesentium ab eaque deserunt?</p>
+        </div>
+
+        <div class="footer-link main">
+            <ul>
+              <li><a href="#abt-mbl-id">about</a></li>
+              <li><a href="#book-sec">books</a></li>
+              <li><a href="#contact">contact</a></li>
+              <li><a href="#">news</a></li>
+             
+              
+              <!-- <li><a href="#">about</a></li> -->
+            </ul>
+      
+            <div class="foot-soc">
+              <a href="#" class="fa fa-facebook"></a>
+               <a href="#" class="fa fa-google"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+      
+            </div>
+            <p>  Copyrite &#169; 2020 Shargene Zangana</p> 
+            <p>  Copyrite &#169; 2020 Shargene Zangana</p> 
+          </div>
+          
+      
+        </div>
+    </main>
+
+  
+
+  <script src="js/menu.js"></script>
+</body>
+</html>
