@@ -4,9 +4,9 @@ $bck-color: #081413;
 // $bck-color: #081410;
 // $bck-color: #081410;
 $fourth-color: #acacab;
-$second-color: #da4c4b;
+$second-color: #a92323;
 $prime-color: #facb59;
-$third-color: #d8d6c1;
+$third-color: #f0f0e8;
 
 $prime-font: "Cormorant Garamond", serif;
 // $font-header: "Proxima-Nova-Thin", sans-serif;
@@ -53,8 +53,8 @@ body {
   //   rgba(50, 60, 54, 0.95)
   // );
   // background-color: #202020;
-  background-color: rgb(219, 213, 213);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23facb59' fill-opacity='0.03' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  background-color: #f0f0e8;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23081413' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 main {
@@ -100,6 +100,14 @@ main {
   // border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.nav-filter {
+  background: rgba(240, 240, 232, 0.45);
+  // background: rgba(8, 20, 19, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+}
+
 // FONT TEMPLATE -------------------------------- //
 
 a {
@@ -137,13 +145,18 @@ h3 {
   letter-spacing: 0.1em;
 }
 
+h5 {
+  font-size: 1.8rem;
+  font-family: $second-font;
+}
+
 p {
   font-size: 2.7rem;
   font-family: $second-font;
   letter-spacing: 0.05em;
   // font-size: 1.7em;
   color: $third-color;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 q {
@@ -889,8 +902,8 @@ q {
 }
 
 .cnt-content p {
-  margin: 0 5em;
-  grid-column: 2 / span 2;
+  margin: 0 1em;
+  grid-column: 3;
   grid-row: 2;
   // margin-right: 3em;
   align-self: center;
@@ -908,7 +921,7 @@ q {
 }
 
 .cnt-container {
-  grid-column: 1;
+  grid-column: 1 / span 2;
   grid-row: 2;
   justify-self: center;
   width: 63%;
@@ -975,7 +988,7 @@ input[type="submit"]:hover {
 
 .footer-link {
   height: 25vh;
-  border-top: 3px solid $bck-color;
+  border-top: 1px solid $bck-color;
   // width: 100%;
   // background-color: #202020;
   display: grid;
@@ -1034,7 +1047,7 @@ input[type="submit"]:hover {
   color: $bck-color;
 }
 
-.footer-link p {
+.footer-link h5 {
   grid-column: 1;
   grid-row: 2;
   justify-self: center;
@@ -1048,6 +1061,16 @@ input[type="submit"]:hover {
   display: block;
   font-family: $prime-font;
 }
+
+#about-page .navbar nav li a,
+#about-page .navbar .logo a {
+  color: $bck-color;
+  font-weight: 600;
+}
+
+// {
+//   color: $bck-color;
+// }
 
 .abt-content {
   margin: 3em;
@@ -1067,18 +1090,63 @@ input[type="submit"]:hover {
 
 .abt-content img:nth-of-type(1) {
   grid-column: 2;
-  grid-row: 1;
-  justify-self: center;
-  align-self: center;
-  width: 45%;
-  opacity: 0.63;
+  grid-row: 1 / span 2;
+  justify-self: end;
+  align-self: end;
+  // margin-left: -3em;
+  z-index: 1;
+  width: 54%;
+  // opacity: 0.81;
   box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.45);
   // margin-left: 11em;
 }
 
+.red-bk {
+  display: block;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+  justify-self: center;
+  align-self: end;
+  background-color: $second-color;
+  height: 90%;
+  width: 45%;
+  opacity: 0.81;
+  z-index: 3;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.45);
+}
+
+.white-bk {
+  display: block;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  align-self: center;
+  justify-self: end;
+  // margin-top: 9em;
+  background-color: $third-color;
+  height: 90%;
+  width: 63%;
+  opacity: 0.9;
+  z-index: 2;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.45);
+}
+
+.green-bk {
+  display: block;
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  align-self: end;
+  justify-self: center;
+  background-color: $bck-color;
+  height: 90%;
+  width: 72%;
+  opacity: 0.9;
+  z-index: 1;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.45);
+}
+
 .abt-title h1 {
   margin: 0;
-  color: $third-color;
+  z-index: 4;
   text-transform: uppercase;
   font-size: 18rem;
   // letter-spacing: 0.1em;
@@ -1091,6 +1159,7 @@ input[type="submit"]:hover {
   align-self: end;
   // color: $prime-color;
   justify-self: center;
+  color: $third-color;
 }
 
 .abt-title h1:nth-of-type(2) {
@@ -1098,6 +1167,7 @@ input[type="submit"]:hover {
   grid-row: 2;
   justify-self: start;
   align-self: center;
+  color: $bck-color;
 }
 
 .abt-title h1:nth-of-type(2)::first-letter {
@@ -1109,22 +1179,25 @@ input[type="submit"]:hover {
   grid-row: 3;
   justify-self: center;
   align-self: center;
+  color: $bck-color;
 }
 
 .abt-content p {
   // font-size: 2rem;
-  color: $third-color;
+  color: $bck-color;
   text-indent: 3rem;
 }
 
 .abt-content p:nth-of-type(1) {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  justify-self: end;
+  margin: 2em;
 }
 
 .abt-content img:nth-of-type(2) {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 4;
   justify-self: center;
   width: 54%;
 }
@@ -1134,20 +1207,20 @@ input[type="submit"]:hover {
 }
 
 .abt-content p:nth-of-type(2) {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 4;
-  text-indent: 3em;
+  justify-self: center;
 }
 
 .abt-content p:nth-of-type(3) {
   grid-column: 2;
-  grid-row: 5;
+  grid-row: 6;
   text-indent: 3em;
 }
 
 .abt-content p:nth-of-type(4) {
   grid-column: 2;
-  grid-row: 6;
+  grid-row: 7;
   text-indent: 3em;
 }
 
@@ -1178,9 +1251,10 @@ input[type="submit"]:hover {
 }
 
 // BOOK-PREVIEW-PAGE-DESKTOP ---------------------------- //
-#prv-book-page {
-  background-color: $third-color;
-}
+// #prv-book-page {
+//   background-color: $third-color;
+//   // background-color: #fff;
+// }
 
 #prv-book-page p,
 #prv-book-page a {
@@ -1193,15 +1267,16 @@ input[type="submit"]:hover {
   background-color: $bck-color;
 }
 
-#wwgh-nav .menu ul li a,
-#wwgh-nav .navbar .logo a {
+#wwgh-pg .menu ul li a,
+#wwgh-pg .navbar .logo a {
   color: $bck-color;
 }
 
-#wwgh-nav .menu ul li a:hover,
-#wwgh-nav .navbar .logo a:hover {
+#wwgh-pg .menu ul li a:hover,
+#wwgh-pg .navbar .logo a:hover {
   color: $second-color;
 }
+
 .book-hero {
   // margin-top: 6vh;
   height: 100vh;
@@ -1210,24 +1285,24 @@ input[type="submit"]:hover {
   grid-template-rows: auto;
 }
 
-.hero-rtrn-link {
-  margin-left: 3rem;
-  padding: 1rem;
-  grid-column: 1;
-  grid-row: 1;
-  justify-self: start;
-  align-self: center;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-size: 2.7rem;
-  color: $third-color;
-  border: 1px solid $third-color;
-}
+// .hero-rtrn-link {
+//   margin-left: 3rem;
+//   padding: 1rem;
+//   grid-column: 1;
+//   grid-row: 1;
+//   justify-self: start;
+//   align-self: center;
+//   // writing-mode: vertical-rl;
+//   // text-orientation: upright;
+//   font-size: 2.7rem;
+//   color: $third-color;
+//   border: 1px solid $third-color;
+// }
 
 .hero-brdr {
-  height: 50%;
+  height: 72%;
   grid-column: 1 / span 2;
-  grid-row: 1;
+  grid-row: 1 / span 2;
   justify-self: center;
   align-self: center;
   border-right: 3px solid $second-color;
@@ -1245,19 +1320,20 @@ input[type="submit"]:hover {
   border-radius: 6px;
   grid-column: 1;
   grid-row: 1;
-  width: 63%;
+  width: 45%;
   justify-self: center;
-  align-self: center;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 1.5fr 0.5fr;
-  justify-content: center;
+  align-self: end;
+  z-index: 2;
+  // display: grid;
+  // grid-template-columns: auto;
+  // grid-template-rows: 1.75fr 0.25fr;
+  // justify-content: center;
 }
 
 .bk-dsply img {
   justify-self: center;
-  align-self: center;
-  width: 81%;
+  align-self: end;
+  width: 100%;
   // background-color: $third-color;
   // padding: 2em;
   border-radius: 6px;
@@ -1265,16 +1341,52 @@ input[type="submit"]:hover {
   box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.45);
 }
 
-#prv-book-page .bk-dsply a {
+.hero-text-bckgrd {
+  z-index: 1;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: center;
+  opacity: 0.2;
+  // margin: 0 6em 0 -6em;
+  border: 3px solid $second-color;
+  border-radius: 50%;
+  height: 18em;
+}
+
+// .hero-text-bckgrd h3 {
+//   font-style: italic;
+//   font-family: $prime-font;
+//   height: 5em;
+//   font-weight: 500;
+// }
+
+.ordr-opt {
+  grid-column: 1;
+  grid-row: 2;
   justify-self: center;
   align-self: center;
-  color: $third-color;
+  color: $second-color;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  z-index: 2;
+}
+
+.ordr-opt h5 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.7rem;
+  margin: 0.5rem;
+}
+
+.ordr-opt a {
+  text-align: center;
 }
 
 .hero-content {
   height: 100vh;
   grid-column: 2 / span 2;
-  grid-row: 1;
+  grid-row: 1 / span 2;
   justify-self: center;
   align-self: center;
   display: grid;
@@ -1310,12 +1422,12 @@ input[type="submit"]:hover {
 }
 
 #prv-book-page .footer-link {
-  border-top: 3px solid $second-color;
+  border-top: 1px solid $second-color;
 }
 
-#prv-book-page .footer-link ul li {
-  border-bottom: 1px solid $second-color;
-}
+// #prv-book-page .footer-link ul li {
+//   border-bottom: 1px solid $second-color;
+// }
 
 /* 
   ////////////////////////////////// RESPONSIVE SECTION /////////////////////////////////
@@ -1474,7 +1586,8 @@ input[type="submit"]:hover {
   p {
     text-indent: 4rem;
     font-family: $second-font;
-    font-size: 2rem;
+    font-size: 2.7rem;
+    font-weight: 400;
   }
 
   q {
@@ -1500,7 +1613,7 @@ input[type="submit"]:hover {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     transition: all 0.3s ease-out;
     display: table;
     background: $prime-color;
@@ -1539,7 +1652,7 @@ input[type="submit"]:hover {
   .navbar label i:before,
   .navbar label i:after {
     display: block;
-    background: $second-color;
+    background: $third-color;
   }
 
   // .navbar label i:before {
@@ -2155,7 +2268,7 @@ input[type="submit"]:hover {
     padding: 1em 0;
     text-align: center;
     width: 100%;
-    border-bottom: 1px solid $prime-color;
+    // border-bottom: 1px solid $prime-color;
   }
 
   .footer-link ul li a {
@@ -2172,8 +2285,9 @@ input[type="submit"]:hover {
     align-self: start;
   }
 
-  .footer-link p {
-    font-size: 1.8rem;
+  .footer-link h5 {
+    // font-size: 0.9rem;
+    font-weight: 100;
     grid-column: 1;
     grid-row: 2;
     text-align: center;
@@ -2198,37 +2312,75 @@ input[type="submit"]:hover {
   .abt-content img:nth-of-type(1) {
     // margin-right: 0.75em;
     margin-top: -5em;
-    width: 54%;
+    width: 72%;
     grid-column: 1;
     grid-row: 2;
     justify-self: end;
     align-self: start;
+    z-index: 3;
+  }
+
+  .red-bk {
+    // display: none;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    height: 72%;
+    width: 90%;
+    justify-self: start;
+    z-index: 2;
+  }
+
+  .white-bk {
+    display: none;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    height: 40%;
+    width: 81%;
+  }
+
+  .green-bk {
+    display: none;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    align-self: start;
+    height: 40%;
   }
 
   .abt-title {
     height: 81vh;
     grid-column: 1;
     grid-row: 1;
+    align-self: center;
+    justify-self: center;
   }
 
   .abt-title h1 {
-    font-size: 6.3em;
+    margin: 0;
+    color: $bck-color;
+    font-size: 16rem;
     line-height: 1em;
   }
 
   .abt-title h1:nth-of-type(1) {
+    // color: $second-color;
     grid-column: 1;
     grid-row: 1;
     align-self: end;
+    // justify-self: start;
     // color: $prime-color;
     justify-self: center;
+    // margin-left: -1em;
   }
 
   .abt-title h1:nth-of-type(2) {
     grid-column: 1 / span 2;
-    grid-row: 2;
+    grid-row: 1 / span 2;
     justify-self: center;
-    align-self: start;
+    align-self: center;
+    // margin-right: -0.5em;
+    // margin-top: 1em;
+    // color: $prime-color;
   }
 
   .abt-title h1:nth-of-type(3) {
@@ -2236,15 +2388,19 @@ input[type="submit"]:hover {
     grid-row: 2;
     justify-self: center;
     align-self: center;
+    // margin-left: 0.5em;
+    // margin-top: 1em;
   }
 
   .abt-content p {
     text-indent: 1em;
+    margin: 0 3%;
   }
 
   .abt-content p:nth-of-type(1) {
     grid-column: 1;
     grid-row: 3;
+    margin: 2em 3% 0;
   }
 
   .abt-content img:nth-of-type(2) {
@@ -2280,6 +2436,7 @@ input[type="submit"]:hover {
     grid-template-columns: auto;
     grid-template-rows: repeat(3, 1fr);
   }
+
   .book-hero {
     margin-top: 5em;
     height: 243vh;
@@ -2287,6 +2444,9 @@ input[type="submit"]:hover {
     grid-row: 1;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, 1fr);
+  }
+
+  .hero-rtrn-link {
   }
 
   .bk-dsply {
