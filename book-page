@@ -18,7 +18,7 @@
 
     <header>
       <div class="header header-fixed" >
-        <div class="navbar container" id="book-nav">
+        <div class="navbar container nav-filter" id="book-nav">
             <div class="logo"><a href="#home">ZZ</a></div>
             <input type="checkbox" id="navbar-toggle" >
             <label for="navbar-toggle"><i></i></label>
@@ -48,10 +48,10 @@
               
             </div>
             <div class="ordr-opt">     
-              <h5>Order From:</h5>
-              <a href="">Amazon</a>
-              <h5>Order PDF:</h5>
-              <a href="">Amazon</a>
+              <!-- <h5>Order From: </h5> -->
+              <a href="">Hardcover</a>
+              <!-- <h5>Order PDF:</h5> -->
+              <a href="">PDF</a>
             </div>
        
             <div class="hero-content">
@@ -84,7 +84,7 @@
               <a href="#" class="fa fa-linkedin"></a>
       
             </div>
-            <h5>  Copyrite &#169; 2020 Shargene Zangana</h5> 
+            <h5>  Copyrite &#169; 2020 Zana Zangana</h5> 
             <!-- <p>  Copyrite &#169; 2020 Shargene Zangana</p>  -->
           </div>
           
