@@ -639,16 +639,20 @@ q {
   color: $second-color;
 }
 
+.abt-quote {
+  height: 72vh;
+  margin-left: -9em;
+}
+
 .abt-quote h3 {
   font-style: italic;
   color: $bck-color;
-  margin-left: -9em;
+
   font-size: 12rem;
   font-family: $prime-font;
   opacity: 0.72;
   text-align: center;
   text-indent: 0;
-  text-align: center;
 }
 
 // --------------------- BOOK SECTION ---------------------- //
@@ -862,7 +866,7 @@ q {
 // CONTACT FORM ------------------------------------------- //
 
 .cnt-content {
-  height: 100vh;
+  height: 120vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 1.5fr;
@@ -1213,13 +1217,13 @@ input[type="submit"]:hover {
 }
 
 .abt-content p:nth-of-type(3) {
-  grid-column: 2;
+  grid-column: 1 / span 2;
   grid-row: 6;
   text-indent: 3em;
 }
 
 .abt-content p:nth-of-type(4) {
-  grid-column: 2;
+  grid-column: 1 / span 2;
   grid-row: 7;
   text-indent: 3em;
 }
@@ -1300,6 +1304,7 @@ input[type="submit"]:hover {
 // }
 
 .hero-brdr {
+  display: block;
   height: 72%;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
@@ -2287,7 +2292,7 @@ input[type="submit"]:hover {
 
   .footer-link h5 {
     // font-size: 0.9rem;
-    font-weight: 100;
+    font-weight: 600;
     grid-column: 1;
     grid-row: 2;
     text-align: center;
@@ -2300,6 +2305,13 @@ input[type="submit"]:hover {
   #about-page {
     margin: 0;
     padding: 0;
+  }
+
+  #about-page .navbar label i,
+  #about-page .navbar label i:before,
+  #about-page .navbar label i:after {
+    display: block;
+    background: $bck-color;
   }
   .abt-content {
     width: 100%;
@@ -2427,18 +2439,25 @@ input[type="submit"]:hover {
 
   // BOOK-PREVIEW-PAGE-DESKTOP ---------------------------- //
 
-  #prv-book-page p,
-  #prv-book-page a {
+  #wwgh-pg p {
+    // #wwgh-pg a {
     font-size: 2.7rem;
   }
-  #prv-book-page {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, 1fr);
+  // #wwgh-pg {
+  //   display: grid;
+  //   grid-template-columns: auto;
+  //   grid-template-rows: repeat(3, 1fr);
+  // }
+
+  #wwgh-pg .navbar label i,
+  #wwgh-pg .navbar label i:before,
+  #wwgh-pg .navbar label i:after {
+    display: block;
+    background: $bck-color;
   }
 
   .book-hero {
-    margin-top: 5em;
+    // margin-top: 7em;
     height: 243vh;
     grid-column: 1;
     grid-row: 1;
@@ -2446,13 +2465,36 @@ input[type="submit"]:hover {
     grid-template-rows: repeat(3, 1fr);
   }
 
-  .hero-rtrn-link {
-  }
-
   .bk-dsply {
-    width: 90%;
+    width: 50%;
+    // height: 81vh;
     grid-column: 1;
     grid-row: 1;
+    align-self: center;
+  }
+
+  .bk-dsply img {
+    // width: 50%;
+  }
+
+  .ordr-opt {
+    height: 7.2vh;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+  }
+
+  .ordr-opt a {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0.25em;
+  }
+
+  .hero-brdr {
+    display: none;
   }
 
   .hero-content {
@@ -2460,6 +2502,7 @@ input[type="submit"]:hover {
     // height: 100vh;
     grid-column: 1;
     grid-row: 2;
+    margin-top: 1em;
   }
 
   .hero-content h1 {
