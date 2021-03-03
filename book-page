@@ -19,7 +19,7 @@
     <header>
       <div class="header header-fixed" >
         <div class="navbar container nav-filter" id="book-nav">
-            <div class="logo"><a href="#home">ZZ</a></div>
+            <div class="logo"><a href="index.html">ZZ</a></div>
             <input type="checkbox" id="navbar-toggle" >
             <label for="navbar-toggle"><i></i></label>
             <nav class="menu">
