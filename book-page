@@ -17,6 +17,10 @@
   <body id="wwgh-pg">
 
     <header>
+    
+
+    <div class="book-hero">
+
       <div class="header header-fixed" >
         <div class="navbar container nav-filter" id="book-nav">
             <div class="logo"><a href="index.html">ZZ</a></div>
@@ -32,36 +36,36 @@
             </nav>        
         </div>
     </div>
+      <!-- <div class="hero-text-bckgrd">
+        
+      </div> -->
+        <!-- <a href="index.html" class="hero-rtrn-link"> Main</a> -->
+        <div class="hero-brdr"></div>
+        <div class="bk-dsply">
+            <img src="img/wwgh-redo-cvr (12).jpg" alt="">
+          
+        </div>
+        <!-- <div class="ordr-opt">      -->
+          <!-- <h5>Order From: </h5> -->
+          <!-- <a href="">Hardcover</a> -->
+          <!-- <h5>Order PDF:</h5> -->
+          <!-- <a href="">PDF</a>
+        </div> -->
+   
+        <div class="hero-content">
+            <h1>Where Was God Hijacked?</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio modi atque recusandae labore est at in delectus adipisci enim? Quos rerum obcaecati quisquam porro quidem aut asperiores ea accusantium blanditiis dolorum non dignissimos consectetur a maxime pariatur, minus voluptatum aliquid cumque quod nisi architecto ipsam nesciunt eum. Eveniet, magni nobis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quis, itaque eveniet beatae magni quae veniam sit sint, velit facere similique nihil rem eum sapiente.</p>
+        </div>
+    </div>
           
     </header>
   
 
     <main id="prv-book-page">
-        <div class="book-hero">
-          <!-- <div class="hero-text-bckgrd">
-            
-          </div> -->
-            <!-- <a href="index.html" class="hero-rtrn-link"> Main</a> -->
-            <div class="hero-brdr"></div>
-            <div class="bk-dsply">
-                <img src="img/wwgh-redo-cvr (12).jpg" alt="">
-              
-            </div>
-            <!-- <div class="ordr-opt">      -->
-              <!-- <h5>Order From: </h5> -->
-              <!-- <a href="">Hardcover</a> -->
-              <!-- <h5>Order PDF:</h5> -->
-              <!-- <a href="">PDF</a>
-            </div> -->
-       
-            <div class="hero-content">
-                <h1>Where Was God Hijacked?</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio modi atque recusandae labore est at in delectus adipisci enim? Quos rerum obcaecati quisquam porro quidem aut asperiores ea accusantium blanditiis dolorum non dignissimos consectetur a maxime pariatur, minus voluptatum aliquid cumque quod nisi architecto ipsam nesciunt eum. Eveniet, magni nobis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quis, itaque eveniet beatae magni quae veniam sit sint, velit facere similique nihil rem eum sapiente.</p>
-            </div>
-        </div>
+     
 
         <div class="book-pre-content">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tempore veritatis explicabo expedita assumenda necessitatibus, autem animi consequatur eum reprehenderit, possimus nesciunt officiis ab eius ipsum dignissimos ut doloribus, laudantium doloremque. Optio dolores laborum eligendi qui. Tempore laboriosam delectus, voluptatem, optio sint, quos perspiciatis omnis nulla praesentium ab eaque deserunt?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tempore veritatis explicabo expedita assumenda necessitatibus, autem animi consequatur eum reprehenderit, possimus nesciunt officiis ab eius ipsum dignissimos ut doloribus, laudantium doloremque. Optio dolores laborum eligendi qui. Tempore laboriosam delectus, voluptatem, optio sint, quos perspiciatis omnis nulla praesentium ab eaque deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, consectetur eos? Nisi, ut adipisci! Eligendi ipsa eaque recusandae quos, iure itaque architecto expedita dignissimos deleniti adipisci, velit explicabo inventore iste quo vitae! Eos ipsa earum, blanditiis doloremque voluptate cumque, facere nulla qui molestias amet odio ullam eum consectetur soluta voluptatum debitis magnam totam suscipit tempore reiciendis. Aspernatur, maxime. Enim, illo numquam? Rem nam cumque accusamus facere eius, perspiciatis quia dicta temporibus maxime voluptatibus animi, et totam sunt eaque impedit. Rem, esse? In nihil delectus omnis dolor cupiditate beatae enim earum recusandae ipsum repellendus id labore reiciendis ipsam ea, illo numquam!</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tempore veritatis explicabo expedita assumenda necessitatibus, autem animi consequatur eum reprehenderit, possimus nesciunt officiis ab eius ipsum dignissimos ut doloribus, laudantium doloremque. Optio dolores laborum eligendi qui. Tempore laboriosam delectus, voluptatem, optio sint, quos perspiciatis omnis nulla praesentium ab eaque deserunt?</p>
 
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tempore veritatis explicabo expedita assumenda necessitatibus, autem animi consequatur eum reprehenderit, possimus nesciunt officiis ab eius ipsum dignissimos ut doloribus, laudantium doloremque. Optio dolores laborum eligendi qui. Tempore laboriosam delectus, voluptatem, optio sint, quos perspiciatis omnis nulla praesentium ab eaque deserunt?</p>
@@ -70,7 +74,7 @@
               <!-- <h5>Order From: </h5> -->
               <a href="">Order on Amazon</a>
               <!-- <h5>Order PDF:</h5> -->
-              <a href="">PDF</a>
+              <a href="">Order PDF Version</a>
             </div>
        
         </div>
