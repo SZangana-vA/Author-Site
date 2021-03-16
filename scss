@@ -1121,6 +1121,18 @@ input[type="submit"]:hover {
   text-indent: 3em;
 }
 
+.abt-content p:nth-of-type(5) {
+  grid-column: 1 / span 2;
+  grid-row: 8;
+  text-indent: 3em;
+}
+
+.abt-content p:nth-of-type(6) {
+  grid-column: 1 / span 2;
+  grid-row: 9;
+  text-indent: 3em;
+}
+
 .abt-text h2 {
   font-family: $prime-font;
   text-align: center;
@@ -1764,7 +1776,6 @@ input[type="submit"]:hover {
 
   .abt-content p {
     margin-left: 3rem;
-    color: blue;
   }
 
   .abt-content p:nth-of-type(2) {
@@ -1781,6 +1792,21 @@ input[type="submit"]:hover {
     grid-column: 1 / span 2;
     grid-row: 7;
   }
+
+  .abt-content p:nth-of-type(5) {
+    grid-column: 1 / span 2;
+    grid-row: 8;
+  }
+
+  // .abt-content p:nth-of-type(6) {
+  //   grid-column: 1 / span 2;
+  //   grid-row: 9;
+  // }
+
+  // .abt-content p:nth-of-type(7) {
+  //   grid-column: 1 / span 2;
+  //   grid-row: 10;
+  // }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
