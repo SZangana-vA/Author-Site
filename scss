@@ -133,11 +133,13 @@ li {
 h1 {
   font-family: $prime-font;
   color: $third-color;
-  font-size: clamp(8rem, 6vw, 12rem);
+  font-size: clamp(6.854rem, 6vw, 
+  11.089rem);
 }
 
 h2 {
-  font-size: 12rem;
+  font-size: clamp(6.854rem, 4.5vw, 
+  11.089rem);
   // color: $third-color;
   font-family: $prime-font;
   font-weight: 300;
@@ -145,9 +147,10 @@ h2 {
 
 h3 {
   font-family: $prime-font;
-  font-size: 2.7rem;
+  font-size: clamp(2.618rem, 2vw, 
+  4.236rem);
   color: $bck-color;
-  letter-spacing: 0.1em;
+  // letter-spacing: 0.1em;
 }
 
 h5 {
@@ -156,7 +159,8 @@ h5 {
 }
 
 p {
-  font-size: 2.7rem;
+  font-size: clamp(2.618rem, 2vw, 
+ 3.6rem);
   font-family: $second-font;
   letter-spacing: 0.05em;
   // font-size: 1.7em;
@@ -550,7 +554,7 @@ q {
 }
 
 .abt-sect-img {
-  margin-top: 3em;
+  margin-top: 1em;
   grid-column: 1;
   grid-row: 1;
   display: grid;
@@ -615,26 +619,30 @@ q {
 }
 
 .abt-text-cnt {
-  height: 72vh;
-  margin: 6em 3em 0 -12em;
+  height: 81vh;
+  margin: 4em 3em 0 -12em;
   grid-column: 2 / span 3;
   grid-row: 1 / span 2;
-  align-self: center;
+  align-self: start;
   justify-self: center;
   // text-indent: -9em;
   z-index: 4;
   background-color: $bck-color;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1.5fr 0.5fr;
+  grid-template-rows: auto;
+
 }
 
 .abt-text-cnt p {
-  padding-left: 6em;
+  // height: 100vh;
+  margin-left: 4.5em;
+  padding: 0 2em;
   grid-column: 1;
   grid-row: 1;
   justify-self: end;
   align-self: center;
+  // line-height: 4rem;
 }
 
 // .abt-text-cnt p:nth-of-type(2) {
@@ -644,7 +652,7 @@ q {
 
 .abt-text-cnt p:nth-of-type(1)::first-letter {
   font-size: 6.3em;
-  font-family: $cursive-font;
+  font-family:$prime-font;
   text-shadow: 4px 4px #000;
 }
 
@@ -658,11 +666,13 @@ q {
 
 .abt-text-cnt a {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
   justify-self: center;
-  font-size: 3.6rem;
+  align-self: end;
+  // font-size: 3.6rem;
   font-family: $prime-font;
   color: $second-color;
+  margin-bottom: 1em;
 }
 
 .abt-quote {
@@ -675,7 +685,7 @@ q {
   font-style: italic;
   color: $bck-color;
 
-  font-size: 12rem;
+  // font-size: 12rem;
   font-family: $prime-font;
   opacity: 0.72;
   text-align: center;
@@ -700,17 +710,17 @@ q {
   color: $second-color;
   font-size: 12rem;
 }
-.bk-img:nth-of-type(1) {
+.book-link:nth-of-type(1) {
   grid-column: 1;
   grid-row: 2;
 }
 
-.bk-img:nth-of-type(2) {
+.book-link:nth-of-type(2) {
   grid-column: 2;
   grid-row: 2;
 }
 
-.bk-img:nth-of-type(3) {
+.book-link:nth-of-type(3) {
   grid-column: 3;
   grid-row: 2;
 }
@@ -737,10 +747,11 @@ q {
   grid-row: 2;
   justify-self: center;
   color: $second-color;
-  font-size: 2.7rem;
+  // font-size: 2.7rem;
   // font-family: $second-font;
   text-align: center;
   font-weight: 600;
+  margin: .25em 0;
 }
 
 .book-link a {
@@ -806,7 +817,7 @@ q {
   align-self: center;
   justify-self: center;
   color: $bck-color;
-  font-size: 3.6rem;
+  // font-size: 3.6rem;
   font-family: $second-font;
   font-weight: 400;
   // opacity: 0.72;
@@ -1455,9 +1466,9 @@ input[type="submit"]:hover {
     font-size: 2.7rem;
   }
 
-  .book-link h3 {
-    font-size: 2.7rem;
-  }
+  // .book-link h3 {
+  //   font-size: 2.7rem;
+  // }
 
   .book-link a {
     color: $second-color;
@@ -1614,6 +1625,7 @@ input[type="submit"]:hover {
   }
 
   .abt-text-cnt {
+    // height: 80vh;
     margin: 0 3rem;
     // padding: 0 3rem;
     grid-column: 1 / span 3;
@@ -1654,8 +1666,8 @@ input[type="submit"]:hover {
   /* -----------------------BOOK SECTION INDEX.HTML ---------------------------- */
 
   .book-container {
-    grid-template-columns: 1fr;
-    // grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
   }
 
   .book-link:nth-of-type(1) {
@@ -1833,7 +1845,7 @@ input[type="submit"]:hover {
   .menu {
     grid-column: 2 / span 2;
     justify-self: end;
-    margin-right: 3rem;
+    // margin-right: 3rem;
   }
 
   .hero h1:nth-of-type(1) {
@@ -1879,6 +1891,14 @@ input[type="submit"]:hover {
     grid-column: 4;
   }
 
+  // .abt-text-cnt a {
+  //   grid-column: 1;
+  //   grid-row: 1;
+  //   justify-self: center;
+  //   align-self: end;
+
+  // }
+
   /* -----------------------ABOUT INDEX.HTML ---------------------------- */
   // .abt-content-dsk {
   //   width: 90vw;
@@ -1893,25 +1913,30 @@ input[type="submit"]:hover {
     margin: 3rem 0 0 3rem;
   }
   .abt-text-cnt {
+    // height: 80vh;
     grid-column: 1 / span 3;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     margin: 6rem 0 0 0;
     align-self: start;
   }
 
   .abt-text-cnt p {
     // margin-right: 9rem;
-    padding: 0;
-    font-size: 2.4rem;
+    margin-left: 1.8em;
+    // padding: 0;
+    // font-size: 2.4rem;
     grid-column: 2 / span 2;
     grid-row: 1 / span 2;
     justify-self: start;
-    align-self: start;
+    align-self: center;
   }
 
   .abt-text-cnt a {
-    grid-column: 2;
-    align-self: start;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+    
   }
 
   .abt-quote {
@@ -1926,8 +1951,9 @@ input[type="submit"]:hover {
   /* -----------------------BOOK SECTION INDEX.HTML ---------------------------- */
 
   .book-container {
-    grid-template-columns: 1fr;
-    // grid-template-rows: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
   }
 
   .book-link:nth-of-type(1) {
@@ -2024,17 +2050,17 @@ input[type="submit"]:hover {
     // font-size: clamp(4rem, 8rem, 9rem);
   }
   h2 {
-    font-size: 9rem;
+    // font-size: 9rem;
   }
 
   h3 {
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
   }
 
   p {
     // text-indent: 4rem;
     font-family: $second-font;
-    font-size: 2.7rem;
+    // font-size: 2.7rem;
     font-weight: 400;
   }
 
@@ -2043,7 +2069,7 @@ input[type="submit"]:hover {
   }
 
   a {
-    font-size: 2rem;
+    // font-size: 2rem;
   }
   .about-desk {
     display: none;
@@ -2380,7 +2406,7 @@ input[type="submit"]:hover {
   //  INDEX.HTML BOOK-SECTION-MOBILE SECTION ------------------ //
 
   .book-container {
-    height: 300vh;
+    // height: 300vh;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -2393,6 +2419,21 @@ input[type="submit"]:hover {
     justify-self: center;
     align-self: end;
     margin: 0;
+  }
+
+  .book-link:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .book-link:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  .book-link:nth-of-type(3) {
+    grid-column: 1;
+    grid-row: 4;
   }
   .bk-img {
     display: flex;
@@ -2417,7 +2458,7 @@ input[type="submit"]:hover {
     // text-align: center;
     // font-weight: 900;
     color: $second-color;
-    font-size: 3.6rem;
+    // font-size: 3.6rem;
     z-index: 2;
   }
 
@@ -2457,7 +2498,7 @@ input[type="submit"]:hover {
     // padding: 0 1em;
     text-align: left;
     font-weight: 600;
-    font-size: 3.6rem;
+    // font-size: 3.6rem;
     justify-self: center;
   }
 
@@ -2833,9 +2874,9 @@ input[type="submit"]:hover {
 
 @media (min-height: 360px) and (max-height: 640px) {
   //CSS
-  .cnt-content p {
-    font-size: 2.7rem;
-  }
+  // .cnt-content p {
+  //   font-size: 2.7rem;
+  // }
 
   .abt-quote h3 {
     // font-size: 4.5rem;
